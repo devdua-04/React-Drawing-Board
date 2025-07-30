@@ -1,0 +1,40 @@
+.canvas-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  background-color: white;
+  touch-action: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Responsive layout for small screens */
+@media screen and (max-width: 768px) {
+  .canvas-container {
+    flex-direction: column;
+  }
+
+  .canvas-wrapper {
+    height: calc(100vh - 200px); /* leave space for toolbar */
+    width: 100%;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+}

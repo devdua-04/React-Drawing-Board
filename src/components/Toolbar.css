@@ -1,0 +1,69 @@
+.toolbar {
+  width: 240px;
+  background-color: #f0f0f0;
+  padding: 16px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #000;
+}
+
+.section input[type="color"],
+.section input[type="range"] {
+  width: 100%;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .toolbar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .section {
+    flex: 1 1 150px;
+    min-width: 140px;
+  }
+
+  .section h3 {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
