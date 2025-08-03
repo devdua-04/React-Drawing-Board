@@ -31,7 +31,7 @@ export default function Toolbar({
       </div>
 
       <div className="section">
-        <h3>Brush Size</h3>
+        <h3>Tool Size</h3>
         <input
           type="range"
           min="1"

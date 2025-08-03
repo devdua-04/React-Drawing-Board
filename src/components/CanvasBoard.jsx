@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./canvasboard.css";
+import "./CanvasBoard.css";
 
 export default function CanvasBoard({
   brushColor,
